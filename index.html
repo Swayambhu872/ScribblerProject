@@ -20,6 +20,7 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="./common/commom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/posts.css" />
 </head>
 
 <body>
@@ -88,7 +89,33 @@
     </div>
   </div> 
 
-    
+    <div id="posts">
+      <button id="allPost-btn">All Posts</button>
+      <button id="createPost-btn"  data-target="#createPostModal" data-toggle="modal">Create Post</button>
+    </div>
+
+    <!-- Create Post Modal -->
+ <div class="modal fade" id="createPostModal" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+  
+   <!---Model content-->
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Pen Your Post</h4>
+      </div>
+      <div class="modal-body" >
+          <form>
+              <label class="labelText">Title</label>
+              <input type="text" placeholder="Enter title of your post" id="title">
+              <label>Contents</label>
+              <textarea id="content" placeholder="Enter the contents of your post" rows="12"></textarea>
+              <button type="submit" id="create-btn">Create</button>   
+      </form>
+      </div>
+    </div>     
+  </div>
+</div> 
 
     <script src="./common/commom.js"></script>
 </body>

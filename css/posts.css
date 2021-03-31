@@ -1,0 +1,45 @@
+#allPost-btn{
+    background-color:yellow;
+    color: black;
+    text-align: center;
+    padding: 8px 22px 8px 22px;
+    margin-left: 5px;
+    font-size: medium;
+}
+#createPost-btn{
+    background-color:yellow;
+    color: black;
+    text-align: center;
+    padding: 8px 15px 8px 15px;
+    margin-left: 5px;
+    font-size: medium;
+}
+#posts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#title{
+    padding:10px;
+}
+#content{
+    background-color: aliceblue;
+    border: 0;
+}
+#create-btn{
+    position:relative;
+    left: 50%;
+    background-color:limegreen;
+    color: #fff;
+    margin-top: 15px;
+    border: 0;
+    padding: 8px 25px;
+    width: max-content;
+}
+#createPostModal{
+    position: absolute;
+    top: 3em;
+}
