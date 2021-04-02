@@ -18,10 +18,9 @@ p.content{
     align-content: center;
     background-color: white;
     margin: 20px 3.5em 20px 3.5em;
-    box-shadow: 2px 2px 2px 2px lavender;
     border-radius: 15px;
     width: 40%;
-    flex-wrap: no-wrap;
+  
     
 }
 .cards-content{
