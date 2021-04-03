@@ -1,0 +1,108 @@
+#postHeading{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-20%);
+    -webkit-transform: translate(-50%,-20%);
+    transform: translate(-50%,-20%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    min-width: 69em;
+    border-style: solid;
+    border-width: 2px;
+    border-color:white;
+    text-align: center;
+    height: fit-content;
+
+}
+#author{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.blogButton{
+    background-color:hotpink;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    border: 0ch;
+    position: absolute;
+    top: 24%;
+    right: 8%;
+}
+#postContent{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    border-style: solid;
+    border-width: 2px;
+    border-color:white;
+    width: 85em;
+    max-width: 85em;
+    min-height: 20em;
+}
+
+#saveBlog{
+    visibility: hidden;
+}
+#likeBlog{
+    background-color:hotpink;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    border: 0ch;
+    position: absolute;
+    top: 77%;
+    left: 5%;
+}
+#like{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+#likeCount{
+    position: relative;
+    top: 4em;
+    left: 0.5em;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
+  #userComments{
+      position: relative;
+      top: 37em;
+      left:5%;
+  }
+  #addList{
+      background-color:red;
+      color: #fff;
+      padding: 6px 15px 6px 15px;
+      border: none;
+      text-align: center;
+      position: relative;
+      top: 39em;
+      left: -37em;
+  }
+  #comments{
+      position: absolute;
+      top: 52em;
+      left:5%;
+  }
+  #commentHead{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      font-size: large;
+  }
+  #addEventNames{
+      background-color: grey;
+    position: absolute;
+    width: 42em;
+    max-width: 42em;
+    top: 54em;
+    left:5%;
+}
+.commentContent{
+background-color: #fff;
+margin: 10px;
+padding: 10px;
+}
