@@ -1,1 +1,64 @@
-Post page
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!---Css Styles-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../common/commom.css" />
+    <!---Bootstrap Cdn-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="postLists">
+    <!-- code for header here -->
+    <header>
+        <div class="header">
+        <h1 id="heading">ScriBBler</h1>
+       <p id="subheading">Explore, Imagine, Create</p>
+    </div>
+    <!---Buttons for signUp and signIn-->
+    <div id="btn"  class="container">
+        <button id="SignINButton">Sign In</button>
+        <button id="SignUpButton">Sign Up</button>  
+    </div>
+    </header>
+    <!---Post Heading-->
+        <div id="postHeading">
+            <p id="heading content" contenteditable="false">Everything you should know about 'module' & 'require' in Node.js</p>
+        </div>
+        <!---Author Name-->
+        <div id="author">
+            <p id="authorName">Srishti Gupta</p>
+        </div>
+        <!---Edit Button-->
+        <button  id= "editBlog" class="blogButton" onclick="editContent()"><i class="fa fa-pencil-square-o" aria-hidden="true">  Edit</i></button>
+        <button  id= "saveBlog" class="blogButton" onclick="saveContent()">Save <i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+    <!---Post content-->
+    <div id="postContent" contenteditable="false">
+        Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.
+    </div>
+
+    <div id="like">
+        <button  id= "likeBlog" class="blogButton" onclick="postLiked()"><i class="fa fa-thumbs-up" aria-hidden="true">  Like</i></button>
+        <p id= "likeCount">Be the first one to like this!</p>
+    </div>
+    <textarea placeholder="Leave a comment..." id="userComments" rows="3" cols="80"></textarea>
+    <button id="addList" onclick="addComments()">Comment</button>
+    <div id="comments">
+        <p id="commentHead">All Comments</p>
+    </div>
+    <div id="addEventNames"></div>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>
