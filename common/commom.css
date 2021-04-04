@@ -1,4 +1,4 @@
-body{
+#homepage{
     background-image:url('../images/background.jpg');
 }
 #heading{
@@ -96,7 +96,6 @@ font-weight: bold;
     font-weight: bold;
     color: blue;
 }
-
 
 
 
