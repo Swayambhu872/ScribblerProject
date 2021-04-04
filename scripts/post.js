@@ -51,7 +51,7 @@ function postLiked(){
             document.getElementById('userComments').value='';
         }
     }
-
+    //Receive data to populate the page from local storage
     function receive(){
         var val = localStorage.getItem('dataKey');
         let Value = JSON.parse(val);

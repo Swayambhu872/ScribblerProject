@@ -25,6 +25,7 @@ var identity;
        temp.style.boxShadow = "";
           
     }
+    //method to send dynamic data to post page through local storage
     function sendData(id){
        let index=0;
       switch(id)
