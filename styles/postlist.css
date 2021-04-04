@@ -1,0 +1,84 @@
+#postLists{
+    background-color: #ffeedd;
+}
+p.content{
+    margin: 1em 1em 0em 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 5em;
+    margin: 0px 3.5em 0px 3.5em;
+}
+.cards{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: white;
+    margin: 20px 3.5em 20px 3.5em;
+    border-radius: 15px;
+    width: 40%;
+  
+    
+}
+.cards-content{
+    background-color: aliceblue;
+    border-radius: 0px 15px 15px 0px;
+}
+ .postAuthor{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: grey;
+ }
+i{
+    cursor: pointer;
+    float: right;
+    padding: 0px 20px 20px 0px;
+}
+span i{
+    padding-right: 0px;
+}
+.head{
+    font-weight: bold;
+    color: grey;
+}
+ #five{
+     position: relative;
+     left: 25%;
+ }
+ #deleteModal{
+     
+     position: absolute;
+     top: 7em;
+     
+ }
+#cnf-msg{
+    font-weight: 400;
+}
+#yes-btn{
+    background-color: green;
+    text-align: center;
+    color: #fff;
+    border: 0ch;
+    padding: 5px 20px 5px 20px;
+    font-weight: 600;
+    font-size:medium;
+    
+}
+#no-btn{
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 0 5px 0 5px;
+    border: 0ch;
+    padding: 7px 20px 7px 20px;
+    position: relative;
+    opacity: 5;
+    font-weight: 20;
+    font-size:medium;
+}
