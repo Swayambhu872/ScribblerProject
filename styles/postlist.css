@@ -5,7 +5,7 @@ p.content{
     margin: 1em 1em 0em 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
-.flex-container{
+#flex-container{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -82,3 +82,47 @@ span i{
     font-weight: 20;
     font-size:medium;
 }
+@media (max-width: 500px){
+    .postAuthor{
+        display: flex;
+        margin: 2px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: grey;
+     }
+    
+    #flex-container{
+        display: flex;
+       flex-wrap: wrap;
+        position: absolute;
+        top: 5em;
+        margin: 4em 0em 0px 0em;
+    }
+    .cards{
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        background-color: white;
+        margin: 20px 3.8em 20px 3.8em;
+        border-radius: 15px;
+        width: 20%;
+        
+      
+        
+    }
+  }
+
+  @media (min-width: 500px) and (max-width: 1000px){
+    .cards{
+        display:flex;
+        flex-direction: row;
+        align-content: center;
+        background-color: white;
+        margin: 20px 3.5em 20px 3.5em;
+        border-radius: 15px;
+        width: 36%;
+        
+        
+    }
+  }
