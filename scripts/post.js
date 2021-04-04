@@ -1,3 +1,4 @@
+receive();
 /*Method to edit contents*/
 function editContent() {
     document.getElementById("postContent").contentEditable = "true";
@@ -49,4 +50,13 @@ function postLiked(){
             list.insertBefore(newText, list.childNodes[0]);
             document.getElementById('userComments').value='';
         }
+    }
+
+    function receive(){
+        var val = localStorage.getItem('dataKey');
+        let Value = JSON.parse(val);
+        document.getElementById("heading content").textContent=Value.contentHead;
+        document.getElementById("authorName").textContent=Value.postAuthor;
+        document.getElementById("postContent").textContent=Value.contentData;
+
     }

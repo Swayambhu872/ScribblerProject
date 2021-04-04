@@ -25,3 +25,32 @@ var identity;
        temp.style.boxShadow = "";
           
     }
+    function sendData(id){
+       let index=0;
+      switch(id)
+      {
+         case one:
+            index = 0;
+            break;
+         case two:
+            index = 1;
+            break;
+         case three:
+            index = 2;
+            break;
+         case four:
+            index = 3;
+            break;
+         case five:
+            index = 4;
+            break;
+
+      }
+      var getData = 
+      {
+         "postAuthor": document.getElementsByClassName('postAuthor')[index].innerText,
+         "contentHead":document.getElementsByClassName('head')[index].innerText,
+         "contentData": document.getElementsByClassName('content')[index].innerText,
+      }
+      localStorage.setItem('dataKey', JSON.stringify(getData ));
+    }
